@@ -2,7 +2,7 @@
 cask "serval" do
   desc ""
   homepage ""
-  version "0.2.9"
+  version "0.2.10"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "serval" do
 
   on_macos do
     on_intel do
-      url "https://github.com/ServalHQ/homebrew-serval/releases/download/v0.2.9/serval_Darwin_x86_64.tar.gz"
-      sha256 "42dcce5ab5eb69e55961c6d2c5db7da033ebfdeb7807a042f56ef0145a5a4840"
+      url "https://github.com/ServalHQ/homebrew-serval/releases/download/v0.2.10/serval_Darwin_x86_64.tar.gz"
+      sha256 "3851146f58b54387fcda6c2a21cb5fa88c38bcd704afce2df1c1854fad9e2853"
     end
     on_arm do
-      url "https://github.com/ServalHQ/homebrew-serval/releases/download/v0.2.9/serval_Darwin_arm64.tar.gz"
-      sha256 "699948d5e7db34e421b4e23bb7d77406de9f5e44b084e0c74226ec5f34336256"
+      url "https://github.com/ServalHQ/homebrew-serval/releases/download/v0.2.10/serval_Darwin_arm64.tar.gz"
+      sha256 "2e4be92aad3cebd6c3cfbef065a4837cc19ca76365385fb150a64a26e44f2833"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/ServalHQ/homebrew-serval/releases/download/v0.2.9/serval_Linux_x86_64.tar.gz"
-      sha256 "79c4934832bbc81f630ed289b4271c64206515ad94a9a98e3639d2a5f5c68da2"
+      url "https://github.com/ServalHQ/homebrew-serval/releases/download/v0.2.10/serval_Linux_x86_64.tar.gz"
+      sha256 "4301953644e1fa670d515ec4c9d1964bb0adc9aff482c346f642a9d4f3ee69fd"
     end
     on_arm do
-      url "https://github.com/ServalHQ/homebrew-serval/releases/download/v0.2.9/serval_Linux_arm64.tar.gz"
-      sha256 "725a5390ef3758491b31bb787857e1dca06a7aa63a6f90a10fd284c990e7ea66"
+      url "https://github.com/ServalHQ/homebrew-serval/releases/download/v0.2.10/serval_Linux_arm64.tar.gz"
+      sha256 "fd513b5f1255a4cc531e9fce35adcd477c810855dd280b9e15131c1e69228a2a"
     end
   end
 
