@@ -2,7 +2,7 @@
 cask "serval" do
   desc ""
   homepage ""
-  version "0.2.1"
+  version "0.2.5"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,29 @@ cask "serval" do
 
   on_macos do
     on_intel do
-      url "https://github.com/ServalHQ/homebrew-serval/releases/download/v0.2.1/serval_Darwin_x86_64.tar.gz"
-      sha256 "492ee8b85a65e9dc22e9727cabbe57ef775e318d1c36b703ff55f111eca14a2e"
+      url "https://github.com/ServalHQ/homebrew-serval/releases/download/v0.2.5/serval_Darwin_x86_64.tar.gz"
+      sha256 "358d70553c42750dc4e260fef9ae70403c48a74fac8f70ee93130fdf91c5b78b"
     end
     on_arm do
-      url "https://github.com/ServalHQ/homebrew-serval/releases/download/v0.2.1/serval_Darwin_arm64.tar.gz"
-      sha256 "b546d9436911e6fef7cc542ca2598de711328fc8ceef6370a47e1c6402f02f33"
+      url "https://github.com/ServalHQ/homebrew-serval/releases/download/v0.2.5/serval_Darwin_arm64.tar.gz"
+      sha256 "75eb87c98a5494d0f8dfa38208f93dcc278c9fc6a4cab105bf0297d517d52aff"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/ServalHQ/homebrew-serval/releases/download/v0.2.1/serval_Linux_x86_64.tar.gz"
-      sha256 "b714e11aef1dc45b25a505f62da70efbabb3349f4cc214bbe29bac9aba8bbff5"
+      url "https://github.com/ServalHQ/homebrew-serval/releases/download/v0.2.5/serval_Linux_x86_64.tar.gz"
+      sha256 "b177edc7dfd25b82963b4b8b07f0110387f56061a9b3807bc671f86ee7ebcffc"
     end
     on_arm do
-      url "https://github.com/ServalHQ/homebrew-serval/releases/download/v0.2.1/serval_Linux_arm64.tar.gz"
-      sha256 "28e3e40854923604081f00c291a9e1bb4be93b04791f2e9979d32502bb8b9331"
+      url "https://github.com/ServalHQ/homebrew-serval/releases/download/v0.2.5/serval_Linux_arm64.tar.gz"
+      sha256 "ea81bfa621bc7e08cc0c259614ded13f5913e6f27f8d2321b81429e4278aaf3a"
+    end
+  end
+
+  postflight do
+    if system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0
+      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/serval"]
     end
   end
 
