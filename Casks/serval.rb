@@ -4,22 +4,22 @@ cask "serval" do
 
   on_macos do
     on_intel do
-      sha256 "dbede000b184a6b7cdf1748ac42893b6c731eae4d54cb8469ff97835259eec5e"
+      sha256 "301baa7809a3429598912f23f7bf911624ee9cc709ecd2d8fa239b15f347f35b"
       url "https://github.com/ServalHQ/homebrew-serval/releases/download/v#{version}/serval_Darwin_x86_64.tar.gz"
     end
     on_arm do
-      sha256 "be5eb16b87cec47864c440c927430529c558e7fa0bb19512546d7a83fc2d49f4"
+      sha256 "2ac1fd7771d98a8eba634c6d47af61797007ab2100f9fe2e9be22a5421b3f551"
       url "https://github.com/ServalHQ/homebrew-serval/releases/download/v#{version}/serval_Darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "0e9f5680e30f88c8a17342b61f0fec1db1fc60a8a919e48c602b5aff08dc4cd1"
+      sha256 "57a79cf79ac23335fdfef784bc9f1bd15356a1eee0016ecc5318af750e0e05d4"
       url "https://github.com/ServalHQ/homebrew-serval/releases/download/v#{version}/serval_Linux_x86_64.tar.gz"
     end
     on_arm do
-      sha256 "7c9c3c8180d6ff493202b7599afc989a82314d96702ebbb4e366561029b25b74"
+      sha256 "03b31b533956090230a87b6b8044b59fb5bcdcbf7357584e3daff200e02f3d0b"
       url "https://github.com/ServalHQ/homebrew-serval/releases/download/v#{version}/serval_Linux_arm64.tar.gz"
     end
   end
