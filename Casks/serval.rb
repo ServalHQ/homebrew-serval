@@ -34,12 +34,6 @@ cask "serval" do
 
   binary "serval"
 
-  postflight do
-    if system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/serval"]
-    end
-  end
-
   # No zap stanza required
 
 end
